@@ -1,0 +1,126 @@
+<header> cabecera
+<nav> barra de contenidos extra
+<article>
+<section>
+<footer> pie de pagina
+<aside> informacion no relacionada a la pagina
+
+<a> si el texto contiene un hipervinculo
+<p> si el texto es un parrafo (bloque de texto)
+
+<h(1---6)> titulo (jerarquia) (GOOGLE CONSIDERA H1 EL TEXTO PRINCIPAL DE LA PAGINA)
+-------------------------------------------------------------------------------
+LISTAS:
+<ul> lista desordenada
+<ol> lista ordenada
+---<li> elemento de la lista
+<dl> lista de definicion
+---<dt> termino de definicion
+---<dd> descripcion de termino
+-------------------------------------------------------------------------------
+<figure>Similar al aside pero si esta relacionado y rompe con el flujo
+<figcaption> descripcion(opcional)
+
+<main> en donde se ubica el contenido mas importante
+-------------------------------------------------------------------------------
+FORMULARIOS
+<form>---Bloque que alberga formularios
+<input>---cuadros de texto para introducir datos
+<label>--puede ser un bloque en el que dentro se alberguen los input y contiene una linea de texto
+
+<fieldset>----Agrupa campos para el formulario
+<legend>------Asigna un nombre al fieldset
+
+TIPOS DE INPUTS
+<input type="text">--recibe datos de texto
+<input type="password">--recibe datos de texto pero los oculta con puntos
+<input type="submit">--se utiliza como boton para enviar
+<input type="email">
+<input type="date">
+<input type="number">
+<input type="checkbox">
+<input type="radio">
+<select>----cuadro con flecha en donde se encuentran dentro varias opciones
+-------<option>--opciones dentro del select
+-------<optiongroup>--agrupar las opciones dandole un orden
+<textarea>
+
+Atributos de los INPUT
+*id----identificador
+*name----Lugar de la BD a donde se enviara el dato
+*value----el valor que el usuario llene se envia a la BD
+*type-----tipo de input
+*placeholder---un texto por defecto antes del llenado,y cuando se escriba algo 	             se borre
+*required----que sea necesario ingresar el dato
+*readonly---que no se puede cambiar el texto escrito
+
+<hr> cambio de seccion (representado con una linea)
+<pre> el navegador tomara el texto tal cual lo escribiste
+<blockquote> para citar
+
+<div> NO SIGNIFICA NADA EN HTML,SOLO SIRVEN PARA CONTENEDORES (sirve como CLASES para CSS)
+
+
+-------------------------------------------------------------------------------
+elemento de linea: uno a lado de otro--NO PUEDEN ESTAR HUERFANOS,DEBEN ESTAR 					DENTRO DE UN ELEMENTO DE BLOQUE
+
+<small> texto de poca importancia
+<strong> texto de mucha importancia
+<em> emfasis en cierto texto
+<cite> citas textuales
+<dfn> definiciones
+<code> que el texto dentro es un codigo
+<data> datos
+<br> salto de linea
+<q> citas
+<abbr> abreciacion
+<del> texto eliminado
+<wbr> ruptura de palabras (cuando la palabra es muy larga)
+<span> equivalente al div pero no es en bloque, si no en linea
+<i> su razon de ser es para diseño(italica)
+<b> (bolt)
+<u> (underline)  
+<sup> superindice
+<sub> subindice
+<time> para tiempo
+<mark> resaltador
+-------------------------------------------------------------------------------
+<a href=""> hipertexto--enlaces
+		rutas absolutas:son unicas
+		rutas relativas:dependen de las carpetas"/"
+-------------------------------------------------------------------------------
+elemento de bloque: espaciado(debajo del otro)
+     EJEMPLO TODO LO QUE SE VIO ANTERIORMENTE 
+
+MARCADORES hacen referencia a algo que se encuentra dentro o fuera
+SE REPRESENTAN POR EL IDENTIFICADOR "id"
+
+Pagina con img libres de derecho de autor "https://www.pexels.com"
+-------------------------------------------------------------------------------
+TABLAS:
+
+<table>----Bloque
+----<tr>--table row(fila)
+----<td>--table data(celda)
+----<th>--table header(cabecera)(Si usas un encabezado deberas guardarlo dentro de un bloque <thead>)
+<tbody>---bloque
+<tfoot>
+<caption> (dentro del bloque table)--indica el titulo de la tabla
+<colgroup>---Para crear un bloque de columnas
+<col>--representa una columna
+-------------------------------------------------------------------------------
+MULTIMEDIA
+<video src=""></video>----atributos:controls,autoplay,muted,poster
+<audio>
+<img>
+-------------------------------------------------------------------------------
+INTERACTIVIDAD
+<details> "contenedor"---<summary>-"titulo para el contenedor"
+<dialog>  "modal que aparece en pantalla"----requiere del atributo "open" para 	que se muestre en pantalla
+<iframe> "traer una pagina web con su estructura y todo"
+-------------------------------------------------------------------------------
+DONDE ENCONTRAR CAMBIOS PARA MANTENERSE ACTUALIZADO
+**W3C----->https://www.w3.org
+**WHATWG---->https://whatwg.org (documentacion mas facil de leer y mas precisa al ser la creadora de html)
+**CANIUSE----->PERMITE SABER EN QUE NAVEGADORES ES POSIBLE USAR ELEMENTOS DE **HTML(https://caniuse.com),TAMBIEN SIRVE PARA VER ESPECIFICACIONES
+**MDN------>https://developer.mozilla.org(documentacion mas ordenada)

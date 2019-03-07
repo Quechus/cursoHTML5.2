@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Marcadores</title>
+</head>
+<body>
+    <!-- Marcadores para direccionar la palabra de la lista hacia la palabra con parrafo haciendo uso del "id" -->
+    <h1>Marcadores</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim perspiciatis nulla qui eveniet maiores vel similique unde, voluptas beatae! Excepturi totam minus cum laborum doloremque similique magni dolorem atque vel est quibusdam explicabo, molestiae dolor fuga, perspiciatis neque velit sapiente ut architecto aliquid autem tempore animi reprehenderit nulla. Ullam, amet!</p>
+    <section id="indice">
+            <h2>Lista de Capitulos</h2>
+            <ul>
+                    <!-- llamamos al id para que el hipertexto de a se redireccione a la h que contiene al id -->
+                    <li><a href="#capitulo1">Capitulo 1</a></li>
+                    <li><a href="#capitulo2">Capitulo 2</a></li>
+                    <li><a href="#capitulo3">Capitulo 3</a></li>
+            </ul>
+    </section>
+    
+    <!-- declaramos un id para cada capitulo -->
+    <h2 id="capitulo1">Capitulo 1</h2>
+    <!-- Implementamos "#indice" en a para que el hipertexto haga que regrese la vista hacia donde se encuentra el id "indice"  -->
+    <p><a href="#indice">Ir al indice</a></p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime repudiandae sed reiciendis ducimus labore, iure placeat porro explicabo magni vel maiores dolorum molestias quia asperiores amet delectus exercitationem necessitatibus at.</p>
+    <!-- Implementamos "#top" en a para que el hipertexto haga que regrese la vista hacia lo mas arriba de la pagina  -->
+    <h2 id="capitulo2">Capitulo 2</h2>
+    <p><a href="#top">Ir al indice</a></p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime repudiandae sed reiciendis ducimus labore, iure placeat porro explicabo magni vel maiores dolorum molestias quia asperiores amet delectus exercitationem necessitatibus at.</p>
+    
+    <h2 id="capitulo3">Capitulo 3</h2>
+    <p><a href="#indice">Ir al indice</a></p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime repudiandae sed reiciendis ducimus labore, iure placeat porro explicabo magni vel maiores dolorum molestias quia asperiores amet delectus exercitationem necessitatibus at.</p>
+</body>
+</html>

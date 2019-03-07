@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Clase 5 Imagenes</title>
+</head>
+<body>
+    <!-- <img src="./img/knight.jpeg" alt="Foto de un caballero medieval"> -->
+    <!-- Devicepixelratio para saber cuantos pixeles ocupa cada pixel de imagen -->
+    <!-- imagen dependiendo del viewportsize -->
+
+    <!-- la imagen cambia dependiendo de la anchura -->
+    <!-- <img src="img/espada.jpg"  srcset="img/fairy.jpg 1000w,img/knight.jpg 800w">  -->
+    <!-- la imagen cambia dependiendo del zoom -->
+    <img src="img/espada.jpg"  srcset="img/fairy.jpg 1.5x,img/knight.jpg 2x">
+
+<!-- Picture es similar, "img" es la imagen por defecto -->
+<!-- Picture lee de arriba hacia abajo, si algo de lo que hay en source no coincide entonces pone la imagen por defecto "img" -->
+<!-- pero si algun source cumple, lo utiliza ignorando los source de debajo -->
+    <picture>
+        <!-- imagenes mayores a 800px -->
+        <source srcset="img/knight.jpg" media="(min-width: 800px)">
+        <!-- imagenes mayores a 500px -->
+        <source srcset="img/fairy.jpg" media="(min-width: 500px)">
+        <!-- si ninguna de los source ocurren -->
+        <img src="./img/espada.jpg" alt="foto">
+    </picture>
+<!-- EL EJEMPLO DE ESTA CLASE SE PROBO EN FIREFOX Y NO EN CHROME DEBIDO A QUE CHROME ES RESPONSIVO Y SELECCIONA LA OPCION MAS CONVENIENTE A LA PC -->
+   
+</body>
+</html>

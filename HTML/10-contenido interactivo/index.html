@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clase 10 contenido interactivo</title>
+</head>
+<body>
+    <!-- modal -->
+    <dialog id=modal>
+        <h2>Curso HTML5 desde cero</h2>
+        <p>impartido por goku</p>
+        <button id="button2">Cerrar</button>
+    </dialog>
+    <h1>Contenido interactivo</h1>
+    <!-- Contenedor -->
+    <details>
+        <summary>HTML</summary>
+        <p>Lenguaje de marcado de hipertexto</p>
+        <p>Hola soy goku</p>
+    </details><br><br>
+    <button id="button">Abrir dialog</button>
+    <!-- Script para hacer aparecer el dialog al pulsar el boton (JavaScript) -->
+    <script>
+        const modal = document.getElementById('modal');
+        const button = document.getElementById('button');
+        const button2 = document.getElementById('button2');
+        button.addEventListener('click', ()=> {modal.setAttribute('open','true')})
+        button2.addEventListener('click', ()=> {modal.removeAttribute('open')})
+    </script>
+    <br>
+   <!-- Contenido embebido -->
+   <!-- Video de youtube -->
+   <!-- iframe permite traer una pagina web contoda su estructura de documento -->
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/WRSDir8Mtow" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   <br>
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3758.3487566361714!2d-98.95885334887856!3d19.612382186717706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ee9210cf37e9%3A0x8038b0f9183d904!2sEcatepec+de+Morelos+-+Texcoco+de+Mora+11%2C+Anahuac+2da+Secc%2C+55884+Tepexpan%2C+M%C3%A9x.!5e0!3m2!1ses-419!2smx!4v1551738819290" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+   <!-- paginas que permiten el uso de iframe: "youtube,googleMaps,instagram,wufoo(formularios)disqus(para tener comentarios en tu pagina)," -->
+    
+</body>
+</html>

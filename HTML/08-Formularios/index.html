@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clase 8 Formularios</title>
+</head>
+<body>
+    <!-- Formulario de llenado de datos (Estructura) -->
+    <!-- action indica a donde debes de apuntar el formulario -->
+    <!-- <form action="form.php"></form> -->
+    <h1>Formularios</h1>
+    <form>
+
+        <fieldset>
+        
+        <legend>Tus datos personales</legend>
+
+        <div>
+                <label>
+                        Ingrese su nombre de usuario
+                        <!-- Cuadro para llenado de texto -->
+                         <!-- Debe de incluir el atributo "name" que se encargara de enviar el nombre relacionado al de la base de datos del servidor -->
+                         <input id="username" type="text" name="username" >
+                </label>
+        </div>
+
+        <div>
+               <!-- <label>
+                   Ingrese su correo
+                   <input type="email">
+               </label> -->
+
+               <!-- se utiliza "placeholder" para ingresar el label dentro del cuadro de texto -->
+               <input type="email" placeholder="Ingrese email">
+               
+        </div>
+        </fieldset>
+
+        <fieldset>
+        <legend>Tus datos en la plataforma</legend>
+        <div>
+                <label>
+                        Ingrese fecha
+                        <input type="date">
+                </label>
+        </div>
+
+        <div>
+                <label>
+                    Ingrese la cantidad
+                    <input type="number">
+                </label>
+        </div>
+        
+        <div>
+                <label>
+                        Ingrese su contraseña
+                        <input id="password" type="password" name="password" required>
+                </label>
+        </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Tus pasatiempos</legend>
+            <label><input type="checkbox">Videojuegos</label>
+            <label><input type="checkbox">Musica</label>
+            <label><input type="checkbox">Peliculas</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Tu genero</legend>
+            <label><input type="radio" name="gender">Hombre</label>
+            <label><input type="radio" name="gender">Mujer</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Select y opciones</legend>
+            <label for="country">Escoge tu pais</label>
+            <select name="country" id="country">
+                <!-- "value" manda el dato hacia la base de datos -->
+                <option value=""></option>
+                <!-- optgroup para agrupar varias opciones -->
+                <optgroup label="America">
+                        <option value="Mexico">Mexico</option>
+                        <option value="Canada">Canada</option>
+                        <option value="EUA">EUA</option>
+                </optgroup>
+                <optgroup label="Europa">
+                        <option value="España">España</option>
+                        <option value="Italia">Italia</option>
+                        <option value="Grecia">Grecia</option>
+                </optgroup>
+                <textarea name="mensaje" id="" cols="30" rows="1" placeholder="Escribe tu mensaje"></textarea>
+            </select>
+        </fieldset>
+
+        <input type="submit" value="Iniciar Sesion">
+        <!-- <button>Enviar</button> -->
+    </form>
+
+    <script>
+        document.getElementById('password').addEventListener('keyup', e=> {console.log(e.target.value)})
+    </script>
+
+</body>
+</html>
